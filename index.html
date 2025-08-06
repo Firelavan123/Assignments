@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Làm Bài Tập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-screen" class="screen">
+    <h1>Chào mừng đến với trang làm bài tập!</h1>
+    <button id="start-btn">Bắt đầu</button>
+    <button id="dont-click-btn">BẤM VÀO ĐÂY NẾU GẶP SỰ CỐ!</button>
+    <button id="guide-btn">Hướng dẫn</button>
+  </div>
+
+  <div id="blank-screen" class="screen hidden">
+    <h2>Đã xảy ra sự cố...</h2>
+    <p>Hảy thử bấm vào nút khác xem?</p>
+    <button onclick="goBack()">Quay lại</button>
+  </div>
+
+  <div id="confirm-screen" class="screen hidden">
+    <h2>Bạn có chắc chắn muốn tiếp tục chứ?</h2>
+    <button onclick="goToLink()">Tiếp tục</button>
+    <button onclick="goBack()">Quay lại</button>
+  </div>
+
+  <div id="guide-screen" class="screen hidden">
+    <h2>Hướng dẫn sử dụng</h2>
+    <h3>Nếu nút bắt đầu không có tác dụng</h3>
+    <div class="images">
+      <img src="123gg1.png" alt="Hướng dẫn 1">
+      <img src="123gg2.png" alt="Hướng dẫn 2">
+      <img src="123gg3.png" alt="Hướng dẫn 3">
+      <img src="123gg5.png" alt="Hướng dẫn 4">
+      <img src="123gg4.png" alt="Hướng dẫn 5">
+      <img src="123gg7.png" alt="Hướng dẫn 6">
+      <img src="123gg8.png" alt="Hướng dẫn 7">
+    </div>
+    <button onclick="goBack()">Quay lại</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
