@@ -54,4 +54,40 @@ button:hover {
   margin: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.images img:hover{
+    transform: translateY(-3px);
+    scale: 1.1;
+}
+
+.images img:active{
+    scale: 2;
+}
+
+/*popup*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* mờ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px white;
+  transition: transform 0.3s;
+}
+
+.popup.hidden {
+  display: none;
 }
