@@ -33,3 +33,19 @@ function goBack() {
 window.onload = () => {
   showScreen('main-screen');
 };
+
+
+// Mở ảnh khi bấm
+document.querySelectorAll('.images img').forEach(img => {
+  img.addEventListener('click', () => {
+    const popup = document.getElementById('image-popup');
+    const popupImg = document.getElementById('popup-img');
+    popupImg.src = img.src;
+    popup.classList.remove('hidden');
+  });
+});
+
+// Đóng popup khi bấm nền đen
+document.getElementById('image-popup').addEventListener('click', () => {
+  document.getElementById('image-popup').classList.add('hidden');
+});
